@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "test1",
-    "slug": "test1",
+    "name": "assigment app new",
+    "slug": "assigment-app-new",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"

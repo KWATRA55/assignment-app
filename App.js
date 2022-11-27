@@ -1,15 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer, } from '@react-navigation/native';
+import Tabs from './tabs'
+import SearchBar from './SearchBar';
+import MapView from 'react-native-maps';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  return(     
+         <Tabs />
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -18,4 +19,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  map : {
+    ...StyleSheet.absoluteFillObject,
+    elevation: 0,
+  }, 
+  nav : {
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+  
 });
